@@ -1,0 +1,199 @@
+/* 
+    Css file is auto-generated. Modyfy only SCSS source file
+    Created on : 2014-01-17, 13:49:18
+    Author     : Rafal Kozlowski - www.prestasolutions.pl  
+*/
+
+$font-color-success: #009900;
+$font-color-error: #990000;
+$font-color-cod: #000099;
+$font-color-inactive: #aaaaaa;
+$font-size-message: 1.5em;
+$font-size-header: 2em;
+$bg-success: #eeffee;
+$bg-error: #ffeeee;
+$bg-cod: #eeeeff;
+$bg-standard: #ffffff;
+
+$message-opacity: 0.9;
+$border-radius: 10px;
+
+.pmMessage { 
+    border: solid 1px $font-color-success; 
+    background: $bg-success; 
+    padding: 10px; 
+    color: $font-color-success; 
+    margin: 0 0 0 10em; 
+    display: none; 
+    position: absolute; 
+    opacity: $message-opacity; 
+    border-radius: $border-radius; 
+    font-weight: bold; 
+    font-size: $font-size-message;
+    &.red { 
+        border-color: $font-color-error;
+        color: $font-color-error; 
+        background-color: $bg-error;
+    }
+    &.red2 {
+        @extend .red;
+        font-size: 1.3em; 
+    }
+}
+.pmLoader	{
+    display: none;}
+img.pmLoader {
+    vertical-align: middle; }
+.pmChange{ 
+    font-weight: bold; 
+    background: $bg-success; 
+    border: solid 1px $font-color-success; 
+    color: $font-color-success; 
+    border-radius: $border-radius; 
+    padding: 3px; 
+    margin-right: 5px;
+    &:hover{
+        color: $font-color-error;
+        border-color: $font-color-error;
+        background-color: $bg-error;
+    }
+    &.unbinded{
+        color: $font-color-inactive;
+        border-color: $font-color-inactive;
+        background-color: $bg-standard;
+        &:hover{
+            color: $font-color-success;
+            border-color: $font-color-success;
+            background-color: $bg-success;
+        }
+    }
+    &.binded{
+        color: $font-color-success;
+        border-color: $font-color-success;
+        background-color: $bg-success;
+        &:hover{
+            color: $font-color-error;
+            border-color: $font-color-error;
+            background-color: $bg-error;        
+        }
+    }
+}
+.pmLicense { 
+    font-size: $font-size-header; 
+    color: $font-color-error; 
+    width: 90%; 
+    text-align: center; 
+    margin: 0.3em auto; 
+    border: solid 1px $font-color-error; 
+    border-radius: $border-radius; 
+    background: $bg-standard; 
+    padding: 0.2em; }
+
+#pmBindedCarriers {
+    .pmChange{
+        &.binded {
+            &:hover { 
+                color: $font-color-cod; 
+                border-color: $font-color-cod; 
+                background-color: $bg-cod; 
+            }
+        }        
+        &.bindedCod { 
+            color: $font-color-cod; 
+            border-color: $font-color-cod; 
+            background-color: $bg-cod; 
+            &:hover { 
+                color: $font-color-error; 
+                border-color: $font-color-error; 
+                background-color: $bg-error;                 
+            }
+        }
+        &.unbinded {
+            color: $font-color-inactive; 
+            border-color: $font-color-inactive; 
+            background-color: $bg-standard; 
+            &:hover { 
+                color: $font-color-success; 
+                border-color: $font-color-success; 
+                background-color: $bg-success;  
+            }
+        }
+    }   
+}
+
+div.PakoMato { line-height: 2.5em; clear: both;}
+#pmPaczkomaty, .pmHidden, div.PakoMatoConf { display: none; }
+
+div.PakoMatoConf {
+    @extend div.PakoMato;
+    label {
+        width: 250px;
+    }
+}
+
+.pm_button { 
+    width: 15em; 
+    display: block; 
+    background: $bg-standard; 
+    border: solid 1px $font-color-inactive; 
+    text-align: center; 
+    padding: 0.5em; 
+    border-bottom: none; 
+    margin-left: 20px; 
+    float: left; 
+    color: $font-color-inactive;
+    &.active { 
+        background: $bg-success; 
+        font-weight: bold; 
+        background: $font-color-success; 
+        color: #ffffff; 
+    }
+}
+
+.pm_tab { 
+    background: $bg-standard; 
+    border: solid 1px $font-color-inactive; 
+    border-radius: $border-radius; 
+    clear: both; 
+    padding: 1em; 
+    display: none; 
+    position: relative;
+    &.active  { 
+        display: block; }
+}
+
+.pmMessageTime { 
+    @extend .pmChange.unbinded;
+    &.active, &:hover {
+        @extend .pmChange.binded;
+    }
+    
+}
+
+.pmBigBtn { 
+    display: block;  
+    width: 50px; 
+    border: solid 1px $font-color-success; 
+    padding: 1.5em; 
+    border-radius: 40px 40px 40px 0px; 
+    color: #fff; 
+    background: $font-color-success; 
+    font-weight: bold; 
+    line-height: 1.2em; 
+}
+
+.pmSmallBtn {  
+    border: solid 1px $font-color-success; 
+    padding: 0.5em;
+    border-radius: $border-radius; 
+    color: #fff; 
+    background: $font-color-success; 
+    font-weight: bold; 
+}     
+.pmNadZapisz { 
+    position: absolute; 
+    left: 35em; 
+    top: 10em; 
+}
+#pmKod1   { width: 3em; }
+#pmKod2   { width: 4em; }

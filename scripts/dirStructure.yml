@@ -1,0 +1,93 @@
+## YAML Template.
+---
+module-name: "pakomato"
+module-path: "/www/modules"
+release-path: "release"
+encoded-dir: "encoded-files"
+dir-perms: 0775
+files-perms: 0775
+version-file: "controllers/PakomatoCommon.php"
+root:
+    path: ""
+    files:
+      - name: "logo.gif"
+      - name: "logo.png"
+      - name: "pakomato.php"
+    subdirs:
+        - path: "controllers"
+          files:
+            - name: "Pakomato14.php"
+            - name: "Pakomato15.php"
+            - name: "Pakomato16.php"
+            - name: "PakomatoCommon.php"
+              from: "encoded-dir"
+          subdirs:
+              - path: "front"
+                files:
+                    - name: "ajax.php"
+        - path: "css"
+          files:
+            - name: "admin-form.css"
+            - name: "admin-order.css"
+            - name: "carriers-list.css"
+        - path: "img"
+          files:
+            - name: "ajax-loader.gif" 
+        - path: "inpost"
+          files:
+            - name: "config.php"
+            - name: "functions.php"
+            - name: "inpost.php"
+          subdirs:
+              - path: "data"
+                files:
+                  - name: "cache1.dat" 
+                  - name: "cache2.dat"
+                  - name: "time1.dat"
+                  - name: "time2.dat"
+        - path: "js"
+          files: 
+            - name: "carriersList.js"
+            - name: "pakomato15.js"
+            - name: "pakomato_admin_order.js"
+            - name: "p16-admin-order.js"
+        - path: "models"
+          files: 
+            - name: "BindedCarrier.php"
+            - name: "BindedCod.php"
+            - name: "Paczkomat.php"
+            - name: "RasekoLicense.php"
+              from: "encoded-dir"
+          subdirs:
+              - path: "v14"
+                files:
+                  - name: "PakomatoOrder.php"
+                  - name: "PakomatoPack.php"
+                  - name: PakomatoUserSettings.php
+              - path: "v15"
+                files: 
+                  - name: "PakomatoOrder.php"
+                  - name: "PakomatoPack.php"
+                  - name: PakomatoUserSettings.php
+              - path: "v16"
+                files: ""
+        - path: "stickers"
+          files: ""
+        - path: "logs"
+          files: ""
+        - path: "upgrade"
+          files:
+              - name: "Upgrade-1.1.php"
+              - name: "Upgrade-1.2.php"
+        - path: "views"
+          subdirs:
+              - path: "templates"
+                subdirs:
+                    - path: "admin"
+                      files:
+                        - name: "adminForm.tpl"
+                    - path: "hook"
+                      files: 
+                        - name: "adminOrder.tpl"
+                        - name: "carriersList.tpl"
+                        - name: "footer.tpl"

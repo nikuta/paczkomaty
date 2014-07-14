@@ -1,0 +1,4 @@
+## YAML Template.
+---
+
+ps_config_file: "/www/prestashop/1.6.0.5/config/config.inc.php"

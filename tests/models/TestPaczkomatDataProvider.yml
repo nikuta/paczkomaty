@@ -1,0 +1,7 @@
+## YAML Template.
+---
+
+testSprawdzKonto:
+    - [ "test@testowy.pl", true ]
+    - [ "non.existing@email.com", false ]
+    - [ "biuro@raseko.pl", true ]

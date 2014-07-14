@@ -1,0 +1,216 @@
+/* 
+    Created on : 2014-01-25, 15:50:04
+    Author     : rafal
+*/
+
+$color-bg-success: #eeffee;
+$color-bg-error: #ffeeee;
+$color-success: green;
+$color-error: red;
+$color-disabled: #dddddd;
+$border-radius: 10px;
+$color-label: #666666;
+
+$color-pack-1: #0088bb;
+$color-pack-2: #009900;
+
+.pakomato{
+    #pakomato_message	{ 
+        display: none; 
+        margin-bottom: 20px; 
+        padding: 10px; 
+        font-size: 1.2em; 
+        border: solid 1px; 
+        &.green { 
+            color: $color-success; 
+            border: solid 1px $color-success; 
+            border-radius: $border-radius; 
+            background: $color-bg-success;
+        }
+        .red { 
+            color: $color-error; 
+            border: solid 1px $color-error; 
+            border-radius: $border-radius; 
+            background: $color-bg-error;
+        }
+    }
+    input{
+        &.pakomato_cod_amount {
+            width: 5em;
+        }
+    }   
+    #pakomato_create {
+        table {
+            tr {
+                td {
+                    line-height: 1.5em;
+                }
+                &.pmCreatePackage {
+                    td {
+                        padding: 10px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+    #pakomato_sender, 
+    #pakomato_create, 
+    #pakomato_packs, 
+    .pmLoader	{ 
+        display: none; 
+    }
+    
+    .pakomato_box { 
+        border: solid 1px #aaa; 
+        background: #fff; 
+        font-weight: bold; 
+        font-size: 1.1em; 
+        padding: 0px 5px; 
+        border-radius: $border-radius; 
+    }
+    .pakomato_status { 
+        margin: 10px; 
+        font-size: 10px; 
+    }
+    
+    .pakomato_user_details,
+    .pakomato_send_machine_info	{ 
+        border: solid 1px #aaa; 
+        border-radius: $border-radius; 
+        margin-top: 10px; 
+        background: #fff; 
+        display: none; 
+        padding: 10px;
+    }
+    .pakomato_user_details_close { 
+        margin: 10px; 
+    }
+    
+    #pakomato_packs{
+        table {
+            &.zlecenia {
+                tr {
+                    td {
+                        line-height: 1.6em;
+                    }
+                }
+            }
+        }
+        .pakomato_pack { 
+            margin-top: 10px; 
+            position: relative;
+            border: solid 1px;
+            &.created{
+                color: $color-pack-1; 
+                border: dashed 1px $color-pack-1;
+            }
+            &.transit {
+                color: $color-pack-2; 
+                border: dashed 1px $color-pack-2;
+            }
+            &.delivered{
+                color: $color-pack-2; 
+                border-color: $color-pack-2;
+            }
+            &.sticker{ 
+                color: $color-pack-1; 
+                border-color: $color-pack-1;
+            }
+            &.canceled{ 
+                color: $color-disabled; 
+                border-color: $color-disabled; 
+            }
+        }
+        .pakomato_pack_button { 
+            margin-left: 10px; 
+        }
+        .pakomato_pack_info { 
+            position:absolute; 
+            top: 10px; 
+            left: 20px; 
+            border: solid 2px #9de; 
+            border-radius: $border-radius; 
+            background: #fff;
+            color: $color-label; 
+            padding: 10px; 
+            z-index: 10; 
+            width: 50em; 
+            text-align: left; 
+            font-size: 14px; 
+            font-weight: normal;
+            span {
+                &.pm_info { 
+                    color: $color-label; 
+                }
+                &.label	{ 
+                    font-weight: bold; 
+                }
+            }
+        }
+    }
+    
+    /* styles for prestashop 1.4.x */
+    &.presta14 { 
+        width: 400px; 
+        font-size: 12px;        
+        
+        .label { 
+            width: 190px; 
+        }
+        select { 
+            width: 150px; 
+        }
+        
+        .pakomato_pack { 
+            font-size: 11px;
+        }
+    }
+    
+    &.presta16 {
+        .pakomato_pack_info {
+            h3 {
+                padding: 2px 0;
+                border: 0;
+                font-size: 1.2em;
+                display: block;
+            }
+        }
+        
+        #pakomato_create {
+            table {
+                tr {
+                    td {
+                        line-height: 1.5em;
+                        padding: 3px 0;
+                        &.label {
+                            color: $color-label;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+        #pakomato_packs {
+            tr.pakomato_row {
+                td {
+                    padding: 2px 0;
+                }
+            }
+            .pakomato_pack_info { 
+                h3 {
+                    margin: 0 0 0 10px;
+                }
+                span {
+                    &.pm_info { 
+                        color: $color-label; 
+                    }
+                    &.label	{ 
+                        font-weight: bold; 
+                        color: $color-label;
+                    }
+                }
+            }
+        }
+    }
+    
+}

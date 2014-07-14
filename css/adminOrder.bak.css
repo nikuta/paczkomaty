@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-04-07, 19:26:21
+    Author     : rafal
+*/
+
+fieldset.pakomato { position: relative; }    
+#pakomato_message	{ display: none; margin-bottom: 20px; padding: 10px; font-size: 1.2em; position: absolute; top: -2em; opacity: 0.8;}
+#pakomato_message.green		{ color: green; border: solid 1px green; border-radius: 5px; background: #eeffee;}
+#pakomato_message.red		{ color: red; border: solid 1px red; border-radius: 5px; background: #ffeeee;}
+#pakomato_sender			{ display: none; }
+#pakomato_create			{ display: none; }
+#pakomato_packs				{ display: none; }
+.pakomato_user_details,
+.pakomato_send_machine_info	{ border: solid 1px #aaa; border-radius: 5px; margin-top: 10px; background: #fff; display: none; padding: 10px;}
+.pakomato_user_details_close { margin: 10px; }
+.pakomato_box			{ border: solid 1px #aaa; background: #fff; font-weight: bold; font-size: 1.2em; padding: 2px; border-radius: 5px; }
+.pakomato_row			{ }
+.pakomato_row span.pakomato_status		{ margin: 10px; font-size: 10px; }	
+.pakomato_pack			{ margin-top: 10px; position: relative; border: solid 1px;}
+.pakomato_pack.created	{ color: #08b; border: dashed 1px #08b; }
+.pakomato_pack.transit	{ color: #090; border: dashed 1px #090; }
+.pakomato_pack.delivered{ color: #090; border-color: #090; }
+.pakomato_pack.sticker	{ color: #08b; border-color: #08b; }
+.pakomato_pack.canceled	{ color: #ddd; border-color: #ddd; }
+.pakomato_pack_button	{ margin-left: 10px; }
+.pmLoader				{ display: none; }
+.pakomato_pack_info		{ position:absolute; top: 10px; left: 20px; border: solid 1px #9de; border-radius: 10px; background: #fff; color: #666; padding: 10px; z-index: 10; width: 50em; text-align: left; font-size: 14px; font-weight: normal;}
+.pakomato_pack_info span.pm_info		{ color: #000; }
+.pakomato_pack_info span.label	{ font-weight: bold; }
+.pakomato .label        { width: 200px; text-align: right;}
+.pakomato table { width: 100%; }
+.pakomato table td      { line-height: 2em; }

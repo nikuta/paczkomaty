@@ -1,0 +1,158 @@
+/* 
+    Css file is auto-generated. Modyfy only SCSS source file
+    Created on : 2014-01-17, 13:49:18
+    Author     : Rafal Kozlowski - www.prestasolutions.pl  
+*/
+.pmMessage {
+  border: solid 1px #009900;
+  background: #eeffee;
+  padding: 10px;
+  color: #009900;
+  margin: 0 0 0 10em;
+  display: none;
+  position: absolute;
+  opacity: 0.9;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.5em; }
+  .pmMessage.red, .pmMessage.red2 {
+    border-color: #990000;
+    color: #990000;
+    background-color: #ffeeee; }
+  .pmMessage.red2 {
+    font-size: 1.3em; }
+
+.pmLoader {
+  display: none; }
+
+img.pmLoader {
+  vertical-align: middle; }
+
+.pmChange {
+  font-weight: bold;
+  background: #eeffee;
+  border: solid 1px #009900;
+  color: #009900;
+  border-radius: 10px;
+  padding: 3px;
+  margin-right: 5px; }
+  .pmChange:hover {
+    color: #990000;
+    border-color: #990000;
+    background-color: #ffeeee; }
+  .pmChange.unbinded, .pmMessageTime {
+    color: #aaaaaa;
+    border-color: #aaaaaa;
+    background-color: white; }
+    .pmChange.unbinded:hover, .pmMessageTime:hover {
+      color: #009900;
+      border-color: #009900;
+      background-color: #eeffee; }
+  .pmChange.binded, .pmMessageTime.active, .pmMessageTime:hover {
+    color: #009900;
+    border-color: #009900;
+    background-color: #eeffee; }
+    .pmChange.binded:hover, .pmMessageTime:hover {
+      color: #990000;
+      border-color: #990000;
+      background-color: #ffeeee; }
+
+.pmLicense {
+  font-size: 2em;
+  color: #990000;
+  width: 90%;
+  text-align: center;
+  margin: 0.3em auto;
+  border: solid 1px #990000;
+  border-radius: 10px;
+  background: white;
+  padding: 0.2em; }
+
+#pmBindedCarriers .pmChange.binded:hover, #pmBindedCarriers .pmMessageTime:hover {
+  color: #000099;
+  border-color: #000099;
+  background-color: #eeeeff; }
+#pmBindedCarriers .pmChange.bindedCod {
+  color: #000099;
+  border-color: #000099;
+  background-color: #eeeeff; }
+  #pmBindedCarriers .pmChange.bindedCod:hover {
+    color: #990000;
+    border-color: #990000;
+    background-color: #ffeeee; }
+#pmBindedCarriers .pmChange.unbinded, #pmBindedCarriers .pmMessageTime {
+  color: #aaaaaa;
+  border-color: #aaaaaa;
+  background-color: white; }
+  #pmBindedCarriers .pmChange.unbinded:hover, #pmBindedCarriers .pmMessageTime:hover {
+    color: #009900;
+    border-color: #009900;
+    background-color: #eeffee; }
+
+div.PakoMato, div.PakoMatoConf {
+  line-height: 2.5em;
+  clear: both; }
+
+#pmPaczkomaty, .pmHidden, div.PakoMatoConf {
+  display: none; }
+
+div.PakoMatoConf label {
+  width: 250px; }
+
+.pm_button {
+  width: 15em;
+  display: block;
+  background: white;
+  border: solid 1px #aaaaaa;
+  text-align: center;
+  padding: 0.5em;
+  border-bottom: none;
+  margin-left: 20px;
+  float: left;
+  color: #aaaaaa; }
+  .pm_button.active {
+    background: #eeffee;
+    font-weight: bold;
+    background: #009900;
+    color: #ffffff; }
+
+.pm_tab {
+  background: white;
+  border: solid 1px #aaaaaa;
+  border-radius: 10px;
+  clear: both;
+  padding: 1em;
+  display: none;
+  position: relative; }
+  .pm_tab.active {
+    display: block; }
+
+.pmBigBtn {
+  display: block;
+  width: 50px;
+  border: solid 1px #009900;
+  padding: 1.5em;
+  border-radius: 40px 40px 40px 0px;
+  color: #fff;
+  background: #009900;
+  font-weight: bold;
+  line-height: 1.2em; }
+
+.pmSmallBtn {
+  border: solid 1px #009900;
+  padding: 0.5em;
+  border-radius: 10px;
+  color: #fff;
+  background: #009900;
+  font-weight: bold; }
+
+.pmNadZapisz {
+  position: absolute;
+  left: 35em;
+  top: 10em; }
+
+#pmKod1 {
+  width: 3em; }
+
+#pmKod2 {
+  width: 4em; }

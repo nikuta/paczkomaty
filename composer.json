@@ -1,0 +1,10 @@
+{
+    "require": {
+        "phpunit/phpunit": "3.7.14"
+    },
+    "autoload": {
+        "psr-0": {
+            ".": ""
+        }
+    }
+}
