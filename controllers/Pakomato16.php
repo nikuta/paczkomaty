@@ -1,5 +1,4 @@
 <?php
-if(!class_exists("RasekoLicense"))require_once PACZKOMATY_PATH.'models/RasekoLicense.php';
 global $inpost_data_dir, $inpost_api_url;
 $inpost_data_dir = PACZKOMATY_PATH.'inpost/data';
 $inpost_api_url  = 'http://api.paczkomaty.pl';
@@ -59,7 +58,6 @@ class PakomatoBase extends PakomatoCommon implements IPakomatoController{
 		if (!$installRes){
 			return false; }
 
-        $this->resetLicense();
         $wys = Paczkomat::paczkomatUżytkownika("test@testowy.pl");
 		$wysPaczk = Paczkomat::pobierzDanePaczkomatu($wys['glowny']);
                         
@@ -79,7 +77,6 @@ class PakomatoBase extends PakomatoCommon implements IPakomatoController{
 
 	public function uninstall()
 	{
-        $this->resetLicense();
 		parent::uninstall();
         
 		foreach($this->_konf as $const=>$name)
@@ -277,7 +274,7 @@ class PakomatoBase extends PakomatoCommon implements IPakomatoController{
             "button_selector" => Configuration::get(self::KONFIG_PREFIX.self::KONFIG_SELEKTOR_PRZYCISKU),
             "np_message"=>Configuration::get(self::KONFIG_PREFIX.self::KONFIG_BRAK_TELEFONU_KOMUNIKAT),
             "showReqPhone"=>Configuration::get(self::KONFIG_PRESTA_WYMAGANY_TELEFON)==0?true:false,
-            "license_message"=>$this->licenseError,
+            "license_message"=>"",
             "login"=>Configuration::get(self::KONFIG_PREFIX.self::KONFIG_LOGIN),
             "haslo"=>Configuration::get(self::KONFIG_PREFIX.self::KONFIG_HASLO),
             "presta15"=>true

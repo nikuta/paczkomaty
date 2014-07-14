@@ -52,8 +52,6 @@ abstract class PakomatoCommon extends Module{
         $this->version = 1.2;
         $this->displayName = $this->l('Paczkomaty 24/7');
         $this->author = 'Prestasolutions.pl';
-        if($this->_isActive)
-	$this->description = $this->l('Wysyłka przez usługę Paczkomaty 24/7');
         $this->psVersion = implode(".",array_slice(explode(".",_PS_VERSION_),0,2));
         parent::__construct();        
         $reflection = new ReflectionClass($this);
