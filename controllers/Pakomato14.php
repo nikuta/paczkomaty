@@ -1,7 +1,7 @@
 <?php
 global $inpost_data_dir, $inpost_api_url;
 $inpost_data_dir = PACZKOMATY_PATH.'inpost/data';
-$inpost_api_url  = 'http://api.paczkomaty.pl';
+$inpost_api_url  = 'https://api.paczkomaty.pl';
 
 require_once PACZKOMATY_PATH.'inpost/functions.php';
 require_once PACZKOMATY_PATH.'inpost/inpost.php';
